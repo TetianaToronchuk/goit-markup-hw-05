@@ -1,4 +1,5 @@
 :root {
+   --navy-blue: #2E2F42;
   --iris: rgba(46, 47, 66, 0.4);
   --font-family: "Roboto", sans-serif;
     --footer-color: #f4f4fd;
@@ -238,13 +239,13 @@ background-color: #404bbf;
   margin-bottom: 8px;
  }
 
- .icon {
-    fill: #4d5ae5;
+  .icon {
+    /* fill: #4d5ae5;
      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+} 
  
 .features-subtitle {
     font-weight: 500;
@@ -378,8 +379,8 @@ color: var(--navy-blue);
 
 
  .icon {
-  fill: #f4f4fd;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* fill: #f4f4fd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   } 
 
 /* 4 SECTION PORTFOLIO */
@@ -578,8 +579,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
-  fill: #f4f4fd;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* fill: #f4f4fd; */
+  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 
@@ -648,7 +649,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: rgba(46, 47, 66, 0.04);
+   background-color: rgba(46, 47, 66, 0.4);
    z-index: 10;
    opacity: 0;
    visibility: hidden;
@@ -720,7 +721,7 @@ opacity: 1;
   line-height: 1.5;
   letter-spacing: 0.02em;
    text-align: center;
-  color: #2E2F42;
+  color: var(--navy-blue);
   margin-bottom: 16px;
 }
 
@@ -771,7 +772,7 @@ position: relative;
   stroke: #404040;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.input-wrapper:focus.input-icon {
+.input-wrapper:focus-within .input-icon {
 fill: #4d5ae5;
 }
 
@@ -838,7 +839,11 @@ fill: #4d5ae5;
               fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input:checked + .checkbox-label .checkbox-custom {
+.checkbox-icon{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-input:checked ~ .checkbox-custom {
   background-color: #404bbf; 
   border: none;
   fill: #F4F4FD; ;
@@ -870,10 +875,11 @@ fill: #4d5ae5;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-submit:hover {
   background-color: #404bbf;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+  
+ }
 
 
 
