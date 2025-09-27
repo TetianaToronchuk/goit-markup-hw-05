@@ -731,9 +731,10 @@ opacity: 1;
   gap: 16px;
 }
 
-.form-field {
-  margin-bottom: 8px;
+.form-field  comment-field {
+  margin-bottom: 16px;
  }
+
 .form-label {
   font-family: var(--font-family);
 font-weight: 400;
@@ -821,8 +822,7 @@ fill: #4d5ae5;
   letter-spacing: 0.04em;
   color:#8e8f99; 
   display: flex;
-  align-items: center;
-  gap: 8px;
+   gap: 8px;
 }
 
 .checkbox-custom {
@@ -873,8 +873,7 @@ fill: #4d5ae5;
   border-radius: 4px;
   cursor: pointer;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+ }
 
 .form-submit:hover {
   background-color: #404bbf;
