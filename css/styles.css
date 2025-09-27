@@ -731,7 +731,7 @@ opacity: 1;
   gap: 16px;
 }
 
-.form-field  comment-field {
+.form-field comment-field {
   margin-bottom: 16px;
  }
 
@@ -872,7 +872,7 @@ fill: #4d5ae5;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .form-submit:hover {
