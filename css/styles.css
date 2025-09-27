@@ -1,4 +1,6 @@
 :root {
+  --iris: rgba(46, 47, 66, 0.4);
+  --font-family: "Roboto", sans-serif;
     --footer-color: #f4f4fd;
 }
 
@@ -717,8 +719,7 @@ opacity: 1;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 20px;
-  text-align: center;
+   text-align: center;
   color: #2E2F42;
   margin-bottom: 16px;
 }
@@ -731,11 +732,7 @@ opacity: 1;
 
 .form-field {
   margin-bottom: 8px;
-  border: 1px solid var(--iris);
-border-radius: 4px;
-width: 360px;
-height: 58px;
-}
+ }
 .form-label {
   font-family: var(--font-family);
 font-weight: 400;
@@ -766,7 +763,7 @@ position: relative;
   outline: none;
 }
 
-.input-icone {
+.input-icon {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -774,7 +771,7 @@ position: relative;
   stroke: #404040;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.form-input:focus .input-icone {
+.form-input:focus + .input-icon {
 background-color: #4d5ae5;
 }
 
