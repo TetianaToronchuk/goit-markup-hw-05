@@ -730,7 +730,7 @@ opacity: 1;
   gap: 16px;
 }
 
-.comment-field {
+.form-field {
   margin-bottom: 8px;
  }
 
@@ -775,6 +775,9 @@ position: relative;
 .input-wrapper:focus-within .input-icon {
 fill: #4d5ae5;
 }
+.comment-field {
+  margin-bottom: 16px;
+}
 
 .comment-textarea {
   width: 100%;
@@ -796,11 +799,7 @@ fill: #4d5ae5;
 }
 
 .checkbox-container {
-  /* display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px; */
-  margin-bottom: 24px;
+ margin-bottom: 24px;
 }
 .visually-hidden{
  position: absolute;
@@ -843,6 +842,10 @@ fill: #4d5ae5;
   fill: #F4F4FD; ;
 }
 
+.checkbox-label .privacy-link {
+  color: #4d5ae5;
+}
+
 .checkbox-icon{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -851,9 +854,7 @@ fill: #4d5ae5;
   user-select: none;
 }
 
-.privacy-link {
-  color: #4d5ae5;
-}
+
 
 .form-submit {
   display: block;
